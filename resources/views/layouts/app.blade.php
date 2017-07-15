@@ -57,9 +57,13 @@
             <div id="page-wrapper">
 
                 <div class="container-fluid">
+                    @if(session()->has('success'))
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}
+                    </div>
+                    @endif
 
-
-                            @yield('content')
+                    @yield('content')
 
                 </div>
                 <!-- /.container-fluid -->

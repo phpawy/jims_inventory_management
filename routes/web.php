@@ -16,10 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('categories/list', 'CategoriesController@getList')->name('categories.list');
-Route::get('categories/new', 'CategoriesController@getCreate')->name('categories.create');
+Route::get('categories/create', 'CategoriesController@getCreate')->name('categories.create');
+Route::post('categories/create', 'CategoriesController@postCreate')->name('categories.create');
+Route::get('categories/{id}/edit', 'CategoriesController@getEdit')->name('categories.edit');
+Route::post('categories/{id}/edit', 'CategoriesController@postEdit')->name('categories.edit');
+Route::get('categories/{id}/delete', 'CategoriesController@getDelete')->name('categories.delete');
+Route::post('categories/{id}/delete', 'CategoriesController@postDelete')->name('categories.delete');
 
 Route::get('attributes/list', 'AttributeController@getList')->name('attributes.list');
-Route::get('attributes/new', 'AttributeController@getCreate')->name('attributes.create');
+Route::get('attributes/create', 'AttributeController@getCreate')->name('attributes.create');
 
 Route::get('products/list', 'ProductsController@getList')->name('products.list');
-Route::get('products/new', 'ProductsController@getCreate')->name('products.create');
+Route::get('products/create', 'ProductsController@getCreate')->name('products.create');

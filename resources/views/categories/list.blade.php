@@ -32,7 +32,10 @@
                     <tr>
                         <td>{{$c->title}}</td>
                         <td>{{$c->products()->count()}}</td>
-                        <td></td>
+                        <td>
+                            <a href="{{route('categories.edit', ['id' => $c->id])}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            <a href="{{route('categories.delete', ['id' => $c->id])}}"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
