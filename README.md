@@ -18,4 +18,4 @@ If you would like to help the continued efforts of this project, donations of an
 
 ### License
 
-This project is under the MIT license.  [license file here](https://github.com/phpawy/jims_inventory_management/issues).
+This project is under the MIT license.  [license file here](https://github.com/phpawy/jims_inventory_management/blob/master/LICENSE).
