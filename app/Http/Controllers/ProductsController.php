@@ -12,4 +12,10 @@ class ProductsController extends Controller
         $data['products'] = Product::all();
         return view('products.list', $data);
     }
+
+    public function getCreate()
+    {
+        $data['products'] = Product::all();
+        return view('products.list', $data);
+    }
 }
